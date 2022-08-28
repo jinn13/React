@@ -1,5 +1,5 @@
 import React from "react";
-import CartContext from "./cart-context";
+import CartContext from "./CartContext";
 
 const CartProvider = (props) => {
   const addItemToCartHandler = (item) => {};
