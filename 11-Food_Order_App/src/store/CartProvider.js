@@ -32,8 +32,11 @@ const cartReducer = (state, action) => {
       totalAmount: updatedTotalAmount
     };
   }
-  return defaultCartState;
-};
+  if (action.type === 'REMOVE'){
+    const existingCartItemIndex = state.items.findIndex();
+  }
+    return defaultCartState;
+  };
 
 const CartProvider = (props) => {
   const [cartState, dispatchCartAction] = useReducer(cartReducer, defaultCartState);
@@ -60,4 +63,4 @@ const CartProvider = (props) => {
   );
 };
 
-export default CartProvider;
+export default CartProvider;x
