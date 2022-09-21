@@ -6,7 +6,7 @@ import DemoOutput from './components/Demo/DemoOutput';
 
 function App() {
   const [showParagraph, setShowParagraph] = useState(false);
-
+  console.log('App Running!');
   const toggleParagraphHandler = () => {
     setShowParagraph(prevShowParagraph => !prevShowParagraph);
   };
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="app">
       <h1>Hi there!</h1>
-      <DemoOutput show={showParagraph}/>
+      <DemoOutput show={false}/>
       {/* {showParagraph && <p>This is new!</p>} */}
       <Button onClick={toggleParagraphHandler}>Toggle Paragraph!</Button>
     </div>
