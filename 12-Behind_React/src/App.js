@@ -18,7 +18,6 @@ function App() {
     <div className="app">
       <h1>Hi there!</h1>
       <DemoOutput show={false}/>
-      <Button onClick={toggleParagraphHandler}>Allow Toggling</Button>
       <Button onClick={toggleParagraphHandler}>Toggle Paragraph!</Button>
     </div>
   );
