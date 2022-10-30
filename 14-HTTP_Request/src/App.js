@@ -71,16 +71,27 @@ function App() {
   return (
     <React.Fragment>
       <section>
-        <button onClick={fetchMoviesHandler}>Fetch Movies</button>
+        <AddMovie onAddMovie={addMovieHandler} />
       </section>
       <section>
-        {/* {!isLoading && movies.length > 0 && <MoviesList movies={movies} />}
-        {!isLoading && movies.length === 0 && !error && <p>Found no movies.</p> }
-        {isLoading && <p>Loading...</p>}
-        {!isLoading && error && <p>{error}</p>} */}
-        {content}
+        <button onClick={fetchMoviesHandler}>Fetch Movies</button>
       </section>
+      <section>{content}</section>
     </React.Fragment>
+
+  // return (
+  //   <React.Fragment>
+  //     <section>
+  //       <button onClick={fetchMoviesHandler}>Fetch Movies</button>
+  //     </section>
+  //     <section>
+  //       {/* {!isLoading && movies.length > 0 && <MoviesList movies={movies} />}
+  //       {!isLoading && movies.length === 0 && !error && <p>Found no movies.</p> }
+  //       {isLoading && <p>Loading...</p>}
+  //       {!isLoading && error && <p>{error}</p>} */}
+  //       {content}
+  //     </section>
+  //   </React.Fragment>
   );
 }
 
