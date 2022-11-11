@@ -1,8 +1,12 @@
 import { useState, useEffect } from 'react';
 
 import Card from './Card';
+import useCounter from '../hooks/use-counter';
+
 
 const ForwardCounter = () => {
+  useCounter();
+
   const [counter, setCounter] = useState(0);
 
   useEffect(() => {
